@@ -1,52 +1,51 @@
 <html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<style>
-.filtros
-{
-color: #004693;
-text-decoration: none;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-}.preview {
-	display:none;
-    width:600px; height:400px;
-    -webkit-transform:scale(.25);
-    -ms-transform:scale(.5);
-    transform:scale(.5);
-    -webkit-transform-origin:0 0; 
-    -ms-transform-origin:0 0; 
-    transform-origin:0 0; 
-    border:4px solid blue;
-    margin:0 0 -300px 0;
-}
-#entradas5:hover + .preview {
-	
-	display:block;	
-}
-</style>
+    <style>
+        .filtros {
+            color: #004693;
+            text-decoration: none;
+        }
+        
+        .box {
+            display: none;
+            width: 100%;
+        }
+        
+        a:hover+.box,
+        .box:hover {
+            display: block;
+            position: relative;
+            z-index: 100;
+        }
+    </style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script&gt;
-<script>
-$(document).ready(function(){
-$(".filtros").click(function(){
-$.ajax
-{
-url: recetas.php
-type: post
-data: {filtro=$(this).attr("id")}
-}
-});
-});
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script>
+    </script>
 </head>
+
 <body>
-<a id="entradas1" class="filtros" href="#">entradas</a><br>
-<a id="entradas2" class="filtros" href="#">carnes</a><br>
-<a id="entradas3" class="filtros" href="#">pastas</a><br>
-<a id="entradas4" class="filtros" href="#">postres</a><br>
-<a id="entradas5" class="filtros" href="https://www.coto.com.ar">Coto</a><br>
-x
-<iframe class="preview" src="new 1.html">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+    <a id="entradas1" class="filtros" href="#">entradas</a><br>
+    <a id="entradas2" class="filtros" href="#">entradas1</a><br>
+    <a id="entradas3" class="filtros" href="#">entradas2</a><br>
+    <a id="entradas4" class="filtros" href="#">entradas3z</a><br>
+    <a id="entradas5" class="filtros" href="https://www.coto.com.ar">Coto</a><br>
+
+    <a href="https://c.tenor.com/OSTuOWPTp1sAAAAC/komi-shy-komi-san.gif">Komi</a>
+    <div class="box">
+        <iframe src="https://streamtape.com/e/9Wqa3wbgAASabx1/" " width = "500px " height = "500px ">
+    </iframe>
+  </div> 
+
 </body>
-</html> 
+
+</html>
