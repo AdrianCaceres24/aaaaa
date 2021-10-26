@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+.filtros
+{
+color: #004693;
+text-decoration: none;
+
+}.preview {
+	display:none;
+    width:600px; height:400px;
+    -webkit-transform:scale(.25);
+    -ms-transform:scale(.5);
+    transform:scale(.5);
+    -webkit-transform-origin:0 0; 
+    -ms-transform-origin:0 0; 
+    transform-origin:0 0; 
+    border:4px solid blue;
+    margin:0 0 -300px 0;
+}
+#entradas5:hover + .preview {
+	
+	display:block;	
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script&gt;
+<script>
+$(document).ready(function(){
+$(".filtros").click(function(){
+$.ajax
+{
+url: recetas.php
+type: post
+data: {filtro=$(this).attr("id")}
+}
+});
+});
+</script>
+</head>
+<body>
+<a id="entradas1" class="filtros" href="#">entradas</a><br>
+<a id="entradas2" class="filtros" href="#">carnes</a><br>
+<a id="entradas3" class="filtros" href="#">pastas</a><br>
+<a id="entradas4" class="filtros" href="#">postres</a><br>
+<a id="entradas5" class="filtros" href="https://www.coto.com.ar">Coto</a><br>
+x
+<iframe class="preview" src="new 1.html">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</body>
+</html> 
