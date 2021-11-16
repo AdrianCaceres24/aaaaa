@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Directorio de Animes  — AnimeLab</title>
+<meta name="description" content="El catálogo completo de animes que existen en nuestra base de datos, los puedes filtrar por tipo, categoría, año y mucho más, solo en tu página favorita: AnimeFLV">
+<meta name="robots" content="index, follow">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="/assets/animeflv/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="/assets/animeflv/css/css.css?v=1.2.10" />
+<link rel="stylesheet" type="text/css" href="/assets/animeflv/css/bootstrap.css" />
+<script type="text/javascript" src="/assets/animeflv/js/modernizr.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<meta name="verify-admitad" content="34e2b77cc8" />
+<meta content='es' http-equiv='content-language' />
+<meta content='es' name='language' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="fb:app_id" content="1730508916998105" />
+<link rel="manifest" href="/manifest.json" />
+</head>
+<body>
+<div class="Wrapper">
+
+<header class="Header">
+<div class="Mid">
+<div class="Container">
+<div class="AX Row AFluid">
+<div class="AFixed">
+    <input type="checkbox" hidden="hidden" id="BtnMenu">
+<nav class="CX Row">
+<div class="DpdwCnt TtCn">
+<ul class="ListResult"></ul>
+</div>
+ </div>
+<ul class="Menu">
+<li><a href="/">Inicio</a></li>
+<li class="Current"><a href="/browse">Directorio Anime</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="Body">
+<div class="Container">
+<div class="Title Page fa-star B12">
+<h1>Lista completa de Animes</h1>
+</div>
+<main class="Main">
+
+<form action="/browse" method="get">
+<div class="filters" style="margin-bottom: 10px;">
+<select name="genre[]" id="genre_select" multiple="multiple">
+<option value="accion">Acci&oacute;n</option><option value="artes-marciales">Artes Marciales</option><option value="aventura">Aventuras</option><option value="carreras">Carreras</option><option value="ciencia-ficcion">Ciencia Ficci&oacute;n</option><option value="comedia">Comedia</option><option value="demencia">Demencia</option><option value="demonios">Demonios</option><option value="deportes">Deportes</option><option value="drama">Drama</option><option value="ecchi">Ecchi</option><option value="escolares">Escolares</option><option value="espacial">Espacial</option><option value="fantasia">Fantas&iacute;a</option><option value="harem">Harem</option><option value="historico">Historico</option><option value="infantil">Infantil</option><option value="josei">Josei</option><option value="juegos">Juegos</option><option value="magia">Magia</option><option value="mecha">Mecha</option><option value="militar">Militar</option><option value="misterio">Misterio</option><option value="musica">M&uacute;sica</option><option value="parodia">Parodia</option><option value="policia">Polic&iacute;a</option><option value="psicologico">Psicol&oacute;gico</option><option value="recuentos-de-la-vida">Recuentos de la vida</option><option value="romance">Romance</option><option value="samurai">Samurai</option><option value="seinen">Seinen</option><option value="shoujo">Shoujo</option><option value="shounen">Shounen</option><option value="sobrenatural">Sobrenatural</option><option value="superpoderes">Superpoderes</option><option value="suspenso">Suspenso</option><option value="terror">Terror</option><option value="vampiros">Vampiros</option><option value="yaoi">Yaoi</option><option value="yuri">Yuri</option> </select>
+<select name="year[]" id="year_select" multiple="multiple">
+<option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option> </select>
+<select name="type[]" id="type_select" multiple="multiple">
+<option value="tv">TV</option>
+<option value="movie">Película</option>
+<option value="special">Especial</option>
+<option value="ova">OVA</option>
+</select>
+<select name="status[]" id="status_select" multiple="multiple">
+<option value="1">En emisión</option>
+<option value="2">Finalizado</option>
+<option value="3">Próximamente</option>
+</select>
+<select name="order" id="order_select">
+<option value="default">Por Defecto</option>
+<option value="updated">Recientemente Actualizados</option>
+<option value="added">Recientemente Agregados</option>
+<option value="title">Nombre A-Z</option>
+<option value="rating">Calificación</option>
+</select>
+<button type="submit" class="btn btn-sm btn-primary">
+<span class="fa fa-filter" aria-hidden="true"></span> Filtrar
+</button>
+</div>
+</form>
+
+
+<ul class="ListAnimes AX Rows A03 C02 D02">
+<li>
+<article class="Anime alt B">
+<a href="/anime/lupin-iii-part-6">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3551.jpg" alt="Lupin III: Part 6"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Lupin III: Part 6</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Lupin III: Part 6</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>Arsène Lupin III, el nieto del caballero ladrón ficticio, Arsène Lupin, es considerado el ladrón más grande del mundo, conocido por anunciar sus intenciones de robar objetos valiosos enviando una tarjeta de visita a sus dueños. Su mano derecha y mejor amigo es Daisuke Jigen, un tirador experto que puede disparar con precisión a un objetivo e...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/lupin-iii-part-6">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/ousama-ranking">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3550.jpg" alt="Ousama Ranking"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Ousama Ranking</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Ousama Ranking</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>La historia se centra en Bojji, un débil y sordo príncipe que no puede sostener incluso una espada para niños. Como el primogénito, sostiene su enorme deseo de convertirse en el más poderoso rey del mundo. No obstante, las personas a su alrededor se refieren despectivamente a él y no tienen intención alguna de aceptarlo como rey. Bojji consi...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/ousama-ranking">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/kaginado">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3548.jpg" alt="Kaginado"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Kaginado</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Kaginado</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">5.0</span></p>
+<p>El anime con diseños chibi será un crossover entre las franquicias de novelas visuales y animes más populares en los que la desarrolladora Key ha estado involucrada, como Kanon, AIR, CLANNAD, Little Busters!, Rewrite y Planetarian. Entre las franquicias anunciadas para el anime crossover, el célebre guionista de Key, Jun Maeda, escribió las no...</p>
+<span class="Flwrs fa-user"><span>9</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/kaginado">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/deep-insanity-the-lost-child">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3549.jpg" alt="Deep Insanity: The Lost Child"></figure>
+<span class="Type tv">Anime</span>
+</div>
+ <h3 class="Title">Deep Insanity: The Lost Child</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Deep Insanity: The Lost Child</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>El proyecto se desarrolla en un mundo invadido por el misterioso “síndrome de Randolph” que provoca comas repentinos. Simultáneamente, un reino subterráneo masivo llamado “Asylym” fue descubierto en el Polo Sur como el origen del síndrome. Criaturas extrañas, a diferencia de las de la superficie, habitan allí con recursos naturales pr...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/deep-insanity-the-lost-child">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/gyakuten-sekai-no-denchi-shoujo">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3547.jpg" alt="Gyakuten Sekai no Denchi Shoujo"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Gyakuten Sekai no Denchi Shoujo</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Gyakuten Sekai no Denchi Shoujo</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>La historia se desarrolla en 2019, justo antes del cambio en las épocas históricas de Japón. Una grieta a otra dimensión se abrió de repente en los cielos de arriba, revelando un mundo alternativo de “cambio radical” llamado “Shinkoku Nippon”. Esta versión paralela de Japón mantuvo su militarismo y permanece estancada en la era Showa...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/gyakuten-sekai-no-denchi-shoujo">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/kimetsu-no-yaiba-mugen-resshahen-arc-tv">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3546.jpg" alt="Kimetsu no Yaiba: Mugen Ressha-hen Arc TV"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Kimetsu no Yaiba: Mugen Ressha-hen Arc TV</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Kimetsu no Yaiba: Mugen Ressha-hen Arc TV</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.6</span></p>
+<p>Resumen de la Película, Kimetsu no Yaiba Movie: Mugen Ressha-hen, con algunas escenas extras y sonidos de fondo nuevos.</p>
+<span class="Flwrs fa-user"><span>51116</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/kimetsu-no-yaiba-mugen-resshahen-arc-tv">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/world-trigger-3rd-season">
+ <div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3544.jpg" alt="World Trigger 3rd Season"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">World Trigger 3rd Season</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>World Trigger 3rd Season</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.8</span></p>
+<p>Cuando la puerta a otro mundo de repente se abre en la Tierra, la ciudad de Mikado es invadida por extrañas criaturas conocidas como “Vecinos”, que son seres maliciosos con armamento tradicional. En respuesta a esta invasión, una organización conocida como la Agencia de Defensa Fronteriza entra en combate con los Vecinos utilizando armas con...</p>
+<span class="Flwrs fa-user"><span>419</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/world-trigger-3rd-season">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/saihate-no-paladin">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3541.jpg" alt="Saihate no Paladin"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Saihate no Paladin</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Saihate no Paladin</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.6</span></p>
+<p>En una ciudad de los muertos, arruinada hace mucho tiempo y lejos de la civilización humana, vive un solo niño humano. Su nombre es Will, y está siendo criado por tres muertos vivientes: el vigoroso guerrero esquelético, Blood; la graciosa sacerdotisa momificada, María; y el hechicero espectral cascarrabias, Gus. Los tres derraman amor en el n...</p>
+<span class="Flwrs fa-user"><span>1695</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/saihate-no-paladin">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/build-divide-code-black">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3542.jpg" alt="Build Divide: Code Black"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Build Divide: Code Black</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Build Divide: Code Black</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.6</span></p>
+<p>En New Kyoto, una ciudad gobernada por el “Rey”, el valor de uno está determinado por su fuerza en el juego de cartas coleccionables Build Divide. Los rumores se arremolinan sobre New Kyoto y su Rey. “Si derrotas al Rey en Build Divide, cualquier deseo se cumplirá”. Y para desafiar al Rey, uno debe participar en la batalla TCG conocida co...</p>
+<span class="Flwrs fa-user"><span>45</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/build-divide-code-black">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/senpai-ga-uzai-kouhai-no-hanashi">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3543.jpg" alt="Senpai ga Uzai Kouhai no Hanashi"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Senpai ga Uzai Kouhai no Hanashi</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Senpai ga Uzai Kouhai no Hanashi</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>El nuevo trabajo de Futaba Igarashi sería genial si su senpai, Harumi Takeda, no fuera tan increíblemente molesto! Futuba odia su risa, odia lo grande que es y realmente odia que la trate como a una niña. El hecho de que Futuba sea bajita y parezca joven no la convierte en una niña, y solo porque pase tanto tiempo con Takeda no significa que lo...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/senpai-ga-uzai-kouhai-no-hanashi">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/shikizakura">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3545.jpg" alt="Shikizakura"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Shikizakura</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Shikizakura</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>Shikizakura, la época en la que los cerezos florecen, mientras que los demás árboles están pintados con los colores del otoño. En este lugar especial es donde el mundo transitorio se encuentra con el mundo espiritual, un ritual para salvar a la humanidad está por comenzar…
+El estudiante de preparatoria Kakeru Miwa, por un extraño giro d...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/shikizakura">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/visual-prison">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3539.jpg" alt="Visual Prison"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Visual Prison</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Visual Prison</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>Ange Yuki es un chico que no puede encajar con su entorno y tiene una fuerte sensación de soledad en su interior. Cuando se encuentra solo en el mundo, deja su ciudad natal para visitar Harajuku, una ciudad donde los artistas que admira están viviendo actualmente. Allí se topa con una batalla en vivo entre las unidades Visual-Kei “ECLIPSE” y...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/visual-prison">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/taishou-otome-otogibanashi">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3540.jpg" alt="Taishou Otome Otogibanashi"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Taishou Otome Otogibanashi</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Taishou Otome Otogibanashi</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>Tamahiko Shima es el hijo menor de la poderosa y rica familia Shima. Bendecido con una gran fortuna desde su infancia, creció sin querer más que el afecto de su familia, a menudo lejana. Después de perder a su madre y paralizar su brazo dominante en un accidente, Tamahiko cayó en una profunda desesperación y es rechazado por su propio padre po...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/taishou-otome-otogibanashi">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/sakugan">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3537.jpg" alt="Sakugan"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Sakugan</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Sakugan</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">5.0</span></p>
+<p>En un futuro lejano, la humanidad fue obligada a vivir en un mundo subterráneo conocido como “El Laberinto”. En este lugar existen varias colonias con ambientes diferentes, algunas con altísimas temperaturas y otras llenas de oro y plata, por ejemplo. Entre ellas, existe la colonia de Pinyin, en donde vive una niña de nueve años llamada Mem...</p>
+<span class="Flwrs fa-user"><span>17</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/sakugan">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/platinum-end">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3538.jpg" alt="Platinum End"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Platinum End</h3>
+</a>
+<div class="Description">
+ <div class="Title"><strong>Platinum End</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>Después de la muerte de sus padres, el joven Mirai Kakehashi queda al cuidado de sus abusivos familiares. Desde entonces, se ha vuelto sombrío y depresivo, lo que lo llevó a intentar suicidarse la noche de su graduación de la escuela secundaria. Sin embargo, es salvado por una chica blanca y pura llamada Nasse que se presenta a sí misma como u...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/platinum-end">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/komisan-wa-comyushou-desu">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3536.jpg" alt="Komi-san wa, Comyushou desu."></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Komi-san wa, Comyushou desu.</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Komi-san wa, Comyushou desu.</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>En su primer día asistiendo a la Preparatoria Privada Itan, Shouko Komi inmediatamente recibe una abrumadora atención y popularidad debido a su estoica belleza y refinada elegancia, por lo que sus compañeros la perciben como una diosa. Sin embargo, solo Hitohito Tadano, un estudiante promedio asignado al asiento junto a ella en clase, es capaz d...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/komisan-wa-comyushou-desu">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/sekai-saikou-no-ansatsusha-isekai-kizoku-ni-tensei-suru">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3532.jpg" alt="Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.8</span></p>
+<p>El asesino más grande de la Tierra solo sabía vivir como una herramienta para sus empleadores, hasta que dejaron de permitirle vivir. Renacido por la gracia de una diosa en un mundo de espadas y hechicería, se le ha ofrecido la oportunidad de hacer las cosas de manera diferente esta vez, pero hay una trampa… Tienen que eliminar a un héroe sup...</p>
+<span class="Flwrs fa-user"><span>292</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/sekai-saikou-no-ansatsusha-isekai-kizoku-ni-tensei-suru">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimas">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3533.jpg" alt="Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shima"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shima</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shima</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>En un mundo de fantasía en el que una chica con la Protección Divina del héroe combate contra el Señor Demonio. En ese mundo, Red, el hermano mayor de esa chica, quien posee la Protección Divina del “Guía”, que solo le otorga un nivel inicial mayor que sus compañeros, acompañó al héroe en su grupo inicial.
+No obstante, puesto que e...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimas">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/muvluv-alternative">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3534.jpg" alt="Muv-Luv Alternative"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Muv-Luv Alternative</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Muv-Luv Alternative</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.2</span></p>
+<p>En la secuela, Takeru despierta tres años después del comienzo del “Unlimited” para encontrarse de nuevo en su habitación. Aunque primero pensó que los eventos de “Muv-Luv Unlimited” fueron solo un sueño, pronto siente que algo anda mal y sale de casa para descubrir que ha sido enviado atrás en el tiempo, al comienzo de los eventos de...</p>
+<span class="Flwrs fa-user"><span>17</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/muvluv-alternative">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/puraore-pride-of-orange">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3535.jpg" alt="Puraore! Pride of Orange"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Puraore! Pride of Orange</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Puraore! Pride of Orange</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>La historia tiene lugar en la ciudad de Nikko, en la prefectura de Tochigi, donde las chica aspiran a la cima del mundo a través del hockey sobre hielo. La estudiante local de secundaria, Manaka, y su hermana menor Ayaka, a quien invitó a la fuerza, llegaron a la puerta de la experiencia de primera mano con el hockey sobre hielo, a cargo del equi...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/puraore-pride-of-orange">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/takt-op-destiny">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3531.jpg" alt="Takt Op. Destiny"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Takt Op. Destiny</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Takt Op. Destiny</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.8</span></p>
+<p>En la historia del anime, un día cayó un meteorito negro en el mundo, y éste cambió por completo. El meteorito produjo unos monstruos grotescos llamados D2, que empezaron a correr sin control. Los D2 prohibieron rápidamente toda la música, que era lo único capaz de vencerlos. Pero hubo algunas personas que se resistieron al D2. Son mujeres j...</p>
+<span class="Flwrs fa-user"><span>132</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/takt-op-destiny">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/shinka-no-mi-shiranai-uchi-ni-kachigumi-jinsei">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3529.jpg" alt="Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.1</span></p>
+<p>Hiiragi Seiichi es un feo, repugnante, sucio y maloliente gordo; o al menos estos son los insultos que ha escuchado durante toda su vida. Así era su vida diaria escolar de acoso, y luego, por alguna razón, un día cuando terminaron las clases, una voz que decía ser un Dios dijo a través del sistema de megafonía que se prepararan para ser trans...</p>
+<span class="Flwrs fa-user"><span>193</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/shinka-no-mi-shiranai-uchi-ni-kachigumi-jinsei">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/kyoukai-senki">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3530.jpg" alt="Kyoukai Senki"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Kyoukai Senki</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Kyoukai Senki</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>El chico protagonista de dieciséis años, Shiiba Amou, no es bueno socializando con los demás, mientras que, por otra parte, la Inteligencia Mecánica Artificial “Guy” ha estado trabajando de forma autónoma para la restauración de Japón. ¿Cómo se relacionarán los destinos del ser orgánico con el artificial?</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/kyoukai-senki">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/kyuuketsuki-sugu-shinu">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3528.jpg" alt="Kyuuketsuki Sugu Shinu"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Kyuuketsuki Sugu Shinu</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Kyuuketsuki Sugu Shinu</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">0.0</span></p>
+<p>Se dice que los vampiros tienen muchas debilidades, tales como el ajo, las cruces, y la luz del sol. El Señor Vampiro Draluc es un amante de los juegos que resulta ser débil… para todo. Siempre está muriendo convirtiéndose en un montón de cenizas ante el más mínimo shock. Cuando su castillo es destruido, se alía con un cazador de vampiros...</p>
+<span class="Flwrs fa-user"><span>0</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/kyuuketsuki-sugu-shinu">VER ANIME</a>
+</div>
+</article>
+</li>
+</ul>
+
+<div class="NvCnAnm"><ul class="pagination"><li class="disabled"><a href="#" rel="prev">&laquo;</a></li><li class="active"><a href="/browse?page=1">1</a></li><li><a href="/browse?page=2">2</a></li><li><a href="/browse?page=3">3</a></li><li><a href="/browse?page=4">4</a></li><li><a href="/browse?page=5">5</a></li><li><a href="/browse?page=6">6</a></li><li><a href="/browse?page=7">7</a></li><li><a href="/browse?page=8">8</a></li><li><a href="/browse?page=9">9</a></li><li><a href="/browse?page=10">10</a></li><li><span>&hellip;</span></li><li><a href="/browse?page=146">146</a></li><li><a href="/browse?page=2" rel="next">&raquo;</a></li></ul></div> </main>
+</div>
+</div>
+
+
+<footer class="Footer">
+<div class="Container">
+<div class="BX Row BFluid Sp20 NMb">
+<div><p><span>Anime Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+<nav class="mnftxt">
+<a href="/condiciones-de-uso.html">Términos y Condiciones</a>
+<a href="/politica-de-privacidad.html">Política de Privacidad</a>
+<a href="/sobre-animeflv.html">Sobre AnimeFLV</a>
+</nav>
+</div>
+<ul class="ListSocial BFixed">
+<li><a href="https://www.facebook.com/armyanime.jp/" target="_blank" class="fa-facebook"></a></li>
+<li><a href="https://www.youtube.com/c/kudasai" target="_blank" class="fa-youtube"></a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+</div>
+
+
+<script>var is_user = false;</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/jquery.typewatch.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/scrlbr.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/percircle.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/funciones.js?v=1.1.23"></script>
+<script type="text/javascript" src="/assets/animeflv/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/alertify.js"></script>
+<!--[if lt IE 9]><script type="text/javascript" src="/assets/animeflv/js/ie/css3mq.js"></script>
+<![endif]-->
+<!--[if lte IE 9]><script type="text/javascript" src="/assets/animeflv/js/ie/ie.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/assets/animeflv/css/bootstrap-multiselect.css" />
+<script type="text/javascript" src="/assets/animeflv/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/abrowser.js"></script>
+<script src="https://video.your-notice.com/html_104280.js" defer charset="UTF-8"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRD6JCRSM0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WRD6JCRSM0');
+</script>
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p--mN3UcHCw6ueQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+
+<script id="dsq-count-scr" src="//https-animeflv-net.disqus.com/count.js" async></script>
+</body>
+</html>
