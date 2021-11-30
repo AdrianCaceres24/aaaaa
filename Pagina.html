@@ -45,6 +45,7 @@ a:hover + .box,.box:hover{
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    </head>
 <body>
   <meta charset="UTF-8"/>
@@ -115,7 +116,8 @@ a:hover + .box,.box:hover{
      </li>
     </ul>
   </div>
-  <section class="home-section">
+  <div class="container">
+	<section class="home-section" id="home-section">
       <div class="text">Destacado</div><br>
 
       <div class="Image fa-play-circle-o">
@@ -123,7 +125,7 @@ a:hover + .box,.box:hover{
         <a href="https://www3.animeflv.net/anime/komisan-wa-comyushou-desu">
            <span class="Type tv">Anime</span>
       </div>
-      <h3 class="Title">Komi-san wa, Comyushou desu.</h3> 
+      <h3 class="Title">Komi-san wa, Komyushō desu.</h3> 
     </a>
       <div class="Image fa-play-circle-o">
         <div class="Description">Trata sobre un hombre que se base en la ligca para poder ir a otro mundo con esto acompaña a el y a sus amigos por momentos tensos</div>
@@ -135,15 +137,44 @@ a:hover + .box,.box:hover{
       </div>
 
       <div class="Image fa-play-circle-o">
-        <figure><img src="https://animeflv.net/uploads/animes/covers/3536.jpg" alt="Komi-san wa, Comyushou desu"></figure>
-        <a href="https://www3.animeflv.net/anime/komisan-wa-comyushou-desu">
+        <figure><img src="https://i1.whakoom.com/large/08/31/13e1fd1010e04e8fadb0a783ee04c475.jpg" width="180" height="300" alt="Komi-san wa, Comyushou desu"></figure>
+        <a id="btn1">
           <span class="Type tv">Anime</span>
-          <h3 class="title">Komi-san wa, Conyushou desu.</h3>
+          <button class="title" onclick="komy()">Komi-san wa, Conyushou desu.</button>
         </a>
       </div>
   </section>
+</div>
 
-  <script src="script.js"></script> 
+  <script>
+  function komy() {
+    $.ajax ({
+	url: "new-3.html",
+	method: "GET",
+	datatype:"html",
+	success:function(datos){
+	$("#").html(datos);
+	
+	}
+	});
+  
+  } 
+    function httpGetAsync(theUrl, callback)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true); 
+    xmlHttp.send(null);
+}
+
+httpGetAsync("./new 3.html", function(result){
+ document.getElementById(id="home-section")  
+});
+  
+  </script>
 
 </body>
 </html>
